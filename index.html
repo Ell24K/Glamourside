@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlamourSide - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Background Music -->
+    <audio id="bgMusic" src="https://files.catbox.moe/avgfhk.mp3" autoplay loop></audio>
+    
+    <!-- Partikel Background -->
+    <div id="particles-js"></div>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/logo.png" alt="GlamourSide Logo">
+                <span>GlamourSide</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="members/members.html">Members</a></li>
+                <li><a href="admin/admin.html">Admin</a></li>
+                <li><a href="recruitment/recruitment.html">Recruitment</a></li>
+                <li><a href="links/links.html">Links</a></li>
+                <li><a href="gallery/gallery.html">Gallery</a></li>
+                <li><a href="credit/credit.html">Credit</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Teks Selamat Datang (di luar Hero Section) -->
+    <section class="welcome-text">
+        <h1>Welcome to Glamourside</h1>
+    </section>
+
+    <!-- Hero Section -->
+    <div class="hero-container">
+        <section class="hero glass">
+            <p>Glamourside adalah komunitas atau squad di game hotel hideaway</p>
+        </section>
+        <section class="hero glass">
+            <p>Didirikan pada tanggal: 11 November 2024</p>
+        </section>
+        <section class="hero glass">
+            <p>Mari bangun relasi dan persahabatan antar tamu!</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 GlamourSide. All rights reserved.</p>
+    </footer>
+
+    <!-- Partikel Script -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS("particles-js", {
+            particles: {
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: "#ffffff" },
+                shape: { type: "circle" },
+                opacity: { value: 0.5, random: true },
+                size: { value: 3, random: true },
+                move: { enable: true, speed: 2, direction: "none", straight: false }
+            },
+            interactivity: {
+                events: {
+                    onhover: { enable: true, mode: "repulse" },
+                    onclick: { enable: true, mode: "push" }
+                },
+                modes: {
+                    repulse: { distance: 100 },
+                    push: { particles_nb: 4 }
+                }
+            },
+            retina_detect: true
+        });
+    </script>
+</body>
+</html>

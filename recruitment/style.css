@@ -1,0 +1,173 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #3a7bd5, #3a7bd5); /* Fix gradient */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Partikel */
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: transparent; /* Pastikan tetap transparan */
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1100px;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px); /* Blur yang lebih smooth */
+    padding: 15px 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #ffcc00;
+}
+
+/* Form Container */
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px); /* Lebih smooth */
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    color: white;
+}
+
+/* Form Styling */
+.form-group {
+    margin: 15px 0;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    outline: none; /* Menghilangkan border bawaan saat klik */
+}
+
+/* Customizing select dropdown */
+.form-group select {
+    appearance: none; /* Hilangkan default dropdown */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: rgba(255, 255, 255, 0.2) url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path fill="white" d="M7 10l5 5 5-5z"></path></svg>') no-repeat;
+    background-position: right 10px center;
+    background-size: 15px;
+    padding-right: 30px; /* Supaya ikon dropdown tidak ketimpa teks */
+}
+
+/* Tombol */
+button {
+    width: 100%;
+    padding: 12px;
+    background: rgba(0, 123, 255, 0.8);
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background: rgba(0, 123, 255, 1);
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        margin: 5px 0;
+    }
+}

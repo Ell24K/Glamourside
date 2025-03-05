@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlamourSide - Credit</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    
+    <!-- Include Particles.js Library -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+
+    <!-- Partikel -->
+    <div id="particles-js"></div>
+
+    <header>
+        <div class="logo">
+            <img src="..//assets/logo.png" alt="GlamourSide Logo">
+            <h1>GlamourSide</h1>
+        </div>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../members/members.html">Members</a>
+            <a href="../recruitment/recruitment.html">Recruitment</a>
+            <a href="../links/links.html">Links</a>
+            <a href="../gallery/gallery.html">Gallery</a>
+            <a href="../admin/admin.html">Admin</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Developer Website</h2>
+        <p>Website ini dikembangkan oleh <strong>Luthfi</strong>.</p>
+        <p>buat ginian doang ber jam jam:v</p>
+        <ul>
+            <li><a href="https://www.instagram.com/notlawz4/" target="_blank">Instagram</a></li>
+            <li><a href="https://www.tiktok.com/@9_.pc" target="_blank">Tiktok</a></li>
+            <li><a href="https://saweria.co/ELL24K" target="_blank">DONATE ME</a></li>
+        </ul>        
+    </main>
+
+    <!-- Particles.js Configuration Script -->
+    <script>
+        particlesJS("particles-js", {
+            particles: {
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: "#ffffff" },
+                shape: { type: "circle" },
+                opacity: { value: 0.5, random: true },
+                size: { value: 3, random: true },
+                move: { enable: true, speed: 2, direction: "none", straight: false }
+            },
+            interactivity: {
+                events: {
+                    onhover: { enable: true, mode: "repulse" },
+                    onclick: { enable: true, mode: "push" }
+                },
+                modes: {
+                    repulse: { distance: 100 },
+                    push: { particles_nb: 4 }
+                }
+            },
+            retina_detect: true
+        });
+    </script>
+
+</body>
+</html>

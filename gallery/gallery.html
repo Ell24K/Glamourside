@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlamourSide - Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Particles.js Container -->
+    <div id="particles-js"></div>
+
+    <!-- Audio Player -->
+    <audio id="backgroundMusic" autoplay loop hidden>
+        <source src="https://files.catbox.moe/avgfhk.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="..//assets/logo.png" alt="Logo">
+            <h1>GlamourSide</h1>
+        </div>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../members/members.html">Members</a>
+            <a href="../admin/admin.html">Admin</a>
+            <a href="../recruitment/recruitment.html">Recruitment</a>
+            <a href="../links/links.html">Links</a>
+            <a href="../credit/credit.html">Credit</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h2>Coming Soon...</h2>
+        <p>Halaman ini coming soon...</p>
+        <p>Donate agar bisa menggunakan fitur ini :D</p>
+    </main>
+
+    <!-- Particles.js Configuration Script -->
+    <script>
+        particlesJS("particles-js", {
+            particles: {
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: "#ffffff" },
+                shape: { type: "circle" },
+                opacity: { value: 0.5, random: true },
+                size: { value: 3, random: true },
+                move: { enable: true, speed: 2, direction: "none", straight: false }
+            },
+            interactivity: {
+                events: {
+                    onhover: { enable: true, mode: "repulse" },
+                    onclick: { enable: true, mode: "push" }
+                },
+                modes: {
+                    repulse: { distance: 100 },
+                    push: { particles_nb: 4 }
+                }
+            },
+            retina_detect: true
+        });
+    </script>
+</body>
+</html>

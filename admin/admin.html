@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlamourSide - Admin</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+
+    <!-- Menambahkan CDN particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+
+    <!-- Navbar - Ditempatkan paling atas -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="..//assets/logo.png" alt="Logo">
+            GlamourSide
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../members/members.html">Members</a></li>
+                <li><a href="../recruitment/recruitment.html">Recruitment</a></li>
+                <li><a href="../links/links.html">Links</a></li>
+                <li><a href="../gallery/gallery.html">Gallery</a></li>
+                <li><a href="../credit/credit.html">Credit</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Audio - Musik dengan autoplay -->
+    <audio id="background-music" autoplay loop>
+        <source src="https://files.catbox.moe/avgfhk.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Particles.js Container -->
+    <div id="particles-js"></div>
+
+    <!-- Main Content -->
+    <main>
+        <h2>Daftar Admin</h2>
+        <div class="admin-list" id="adminList">
+            <!-- List admin akan dimuat dari script -->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 GlamourSide. All Rights Reserved.
+    </footer>
+
+    <!-- Particles.js Configuration Script -->
+    <script>
+        particlesJS("particles-js", {
+            particles: {
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: "#ffffff" },
+                shape: { type: "circle" },
+                opacity: { value: 0.5, random: true },
+                size: { value: 3, random: true },
+                move: { enable: true, speed: 2, direction: "none", straight: false }
+            },
+            interactivity: {
+                events: {
+                    onhover: { enable: true, mode: "repulse" },
+                    onclick: { enable: true, mode: "push" }
+                },
+                modes: {
+                    repulse: { distance: 100 },
+                    push: { particles_nb: 4 }
+                }
+            },
+            retina_detect: true
+        });
+    </script>
+
+</body>
+</html>
